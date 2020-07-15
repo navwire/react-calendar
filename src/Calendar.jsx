@@ -527,7 +527,7 @@ export default class Calendar extends Component {
             formatShortWeekday={formatShortWeekday}
             onClickWeekNumber={onClickWeekNumber}
             onMouseLeave={selectRange ? onMouseLeave : null}
-            showFixedNumberOfWeeks={showFixedNumberOfWeeks || showDoubleView}
+            showFixedNumberOfWeeks={showFixedNumberOfWeeks}
             showNeighboringMonth={showNeighboringMonth}
             showWeekNumbers={showWeekNumbers}
             {...commonProps}
@@ -626,7 +626,7 @@ Calendar.defaultProps = {
   minDetail: 'century',
   returnValue: 'start',
   showNavigation: true,
-  showNeighboringMonth: true,
+  showNeighboringMonth: false,
 };
 
 const isActiveStartDate = PropTypes.instanceOf(Date);
